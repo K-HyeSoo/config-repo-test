@@ -1,0 +1,22 @@
+server:
+  port: 9010
+
+spring:
+  application:
+    name: API-GATEWAY
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:9020/eureka/}
+zuul:
+  routes:
+    okr-service:
+      path: /okr/**
+      service-id: OKR-SERVICE
+    ps-service:
+      path: /ps/**
+      service-id: PS-SERVICE
+    rs-service:
+      path: /rs/**
+      service-id: RS-SERVICE
