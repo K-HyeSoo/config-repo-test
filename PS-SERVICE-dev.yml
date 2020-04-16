@@ -4,12 +4,8 @@ spring:
   datasource:
     hikari:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      jdbc-url: jdbc\:mysql\://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com\:3306/iqsbz5?serverTimezone=UTC
+      jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/iqsbz5?serverTimezone=UTC
       username: iqsbz
       password: \!SqiSoft00
-      maximum-pool-size: 3
-      connection-test-query: SELECT 1
-      idle-timeout: 100000
-      validation-timeout: 3000
-      max-lifetime: 180000
+
      
