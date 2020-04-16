@@ -4,7 +4,7 @@ spring:
   datasource:
     hikari:
       username: iqsbz
-      password: !Sqisoft00
+      password: \!Sqisoft00
       maximum-pool-size: 3
       connection-test-query: SELECT 1
       driver-class-name: com.mysql.cj.jdbc.Driver
