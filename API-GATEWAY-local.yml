@@ -4,7 +4,8 @@ server:
 spring:
   application:
     name: API-GATEWAY
-
+  profiles: local
+  
 eureka:
   client:
     service-url:
