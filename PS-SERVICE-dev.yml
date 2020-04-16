@@ -1,0 +1,3 @@
+spring:
+  profiles: dev
+  message: Hello Spring PS - SERVICE Dev Server!!
