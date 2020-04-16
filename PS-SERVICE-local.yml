@@ -1,3 +1,15 @@
 spring:
   profiles: local
   message: Hello Spring PS - SERVICE Local Server!!
+  datasource:
+    hikari:
+      username: iqsbz
+      password: !Sqisoft00
+      maximum-pool-size: 3
+      connection-test-query: SELECT1
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://192.168.3.203:3306/iqsbz5?serverTimezone=UTC
+      idle-timeout: 100000
+      validation-timeout: 3000
+      max-lifetime: 180000
+     
