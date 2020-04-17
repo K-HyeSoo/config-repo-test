@@ -5,7 +5,7 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/iqsbz5?serverTimezone=UTC
       username: iqsbz
-      password: !SqiSoft00
+      password: \!SqiSoft00
   jpa:
     database: mysql
     show-sql: true
