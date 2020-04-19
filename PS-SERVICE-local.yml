@@ -5,25 +5,23 @@ spring:
     database: mysql
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-  datasource:
-    ps-service:
+  ps-service:
+    datasource:
+      url: jdbc:mysql://192.168.3.203:3306/ps-service?serverTimezoneUTC
       username: iqsbz
       password: '!Sqisoft00'
       maximum-pool-size: 3
       connection-test-query: SELECT 1
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://192.168.3.203:3306/ps-service?serverTimezone=UTC
-      idle-timeout: 100000
-      validation-timeout: 3000
-      max-lifetime: 180000
       
-    iqsbz3:
+  iqsbz3:
+    datasource:
+      url: jdbc:mysql://192.168.3.203:3306/iqsbz3?serverTimezone=UTC
       username: iqsbz
       password: '!Sqisoft00'
       maximum-pool-size: 3
       connection-test-query: SELECT 1
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://192.168.3.203:3306/iqsbz3?serverTimezone=UTC
       idle-timeout: 100000
       validation-timeout: 3000
       max-lifetime: 180000
