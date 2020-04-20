@@ -7,7 +7,7 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
 ps-service:
   datasource:
-    jdbc-url: jdbc:mysql://192.168.3.203:3306/ps-service?serverTimezoneUTC
+    jdbc-url: jdbc:mysql://192.168.3.203:3306/ps_service?serverTimezoneUTC
     username: iqsbz
     password: '!Sqisoft00'
     maximum-pool-size: 3
