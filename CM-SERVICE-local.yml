@@ -1,13 +1,13 @@
 spring:
   profiles: local
-  message: Hello Spring RS - SERVICE Local Server!!
+  message: Hello Spring CM - SERVICE Local Server!!
   jpa:
     database: mysql
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-rs-service:
+cm-service:
   datasource:
-    jdbc-url: jdbc:mysql://192.168.3.203:3306/ps_service?serverTimezone=UTC
+    jdbc-url: jdbc:mysql://192.168.3.203:3306/cm_service?serverTimezone=UTC
     username: iqsbz
     password: '!Sqisoft00'
     maximum-pool-size: 3
