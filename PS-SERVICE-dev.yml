@@ -1,17 +1,20 @@
 spring:
   profiles: dev
   message: Hello Spring PS - SERVICE dev Server!!
+  jpa:
+    database: mysql
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+
+ps-service:
   datasource:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/ps_service?serverTimezone=UTC
       username: iqsbz
       password: '!SqiSoft00'
-  jpa:
-    database: mysql
-    show-sql: true
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-    
-     
+
+
 iqsbz3:
   datasource:
     jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/iqsbz3?serverTimezone=UTC
