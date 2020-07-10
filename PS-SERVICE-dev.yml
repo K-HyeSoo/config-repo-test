@@ -10,7 +10,7 @@ spring:
 ps-service:
   datasource:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/ps_service?serverTimezone=UTC
+      jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/ps_service?serverTimezone=UTC
       username: iqsbz
       password: '!SqiSoft00'
 
