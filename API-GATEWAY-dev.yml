@@ -9,7 +9,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_URL:http://13.125.:9020/eureka/}
+      defaultZone: ${EUREKA_URL:http://13.125.49.215:9020/eureka/}
 zuul:
   routes:
     okr-service:
