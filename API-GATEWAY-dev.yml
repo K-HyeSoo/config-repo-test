@@ -21,6 +21,6 @@ zuul:
     rs-service:
       path: /rs/**
       service-id: RS-SERVICE
-     cm-service:
+    cm-service:
        path: /cm/**
        service-id: CM-SERVICE
