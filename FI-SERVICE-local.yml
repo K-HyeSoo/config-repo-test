@@ -5,6 +5,7 @@ spring:
     database: mysql
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    
 fi-service:
   datasource:
     jdbc-url: jdbc:mysql://192.168.3.203:3306/fi_service?serverTimezone=UTC
