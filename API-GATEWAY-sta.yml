@@ -9,7 +9,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_URL:http://eureka:9020/eureka/}
+      defaultZone: ${EUREKA_URL:http://eurekaserver:9020/eureka/}
 zuul:
   routes:
     okr-service:
@@ -21,6 +21,6 @@ zuul:
     rs-service:
       path: /rs/**
       service-id: RS-SERVICE
-     cm-service:
-       path: /cm/**
-       service-id: CM-SERVICE
+    cm-service:
+      path: /cm/**
+      service-id: CM-SERVICE
