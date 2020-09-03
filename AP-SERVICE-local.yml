@@ -5,9 +5,13 @@ spring:
     database: mysql
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
 ap-service:
   datasource:
-    jdbc-url: jdbc:mysql://192.168.3.203:3306/ap_service?serverTimezone=UTC
+    jdbc-url: jdbc:mysql://192.168.3.203:3306/ap_serviceserverTimezone=Asia/Seoul&useLegacyDatetimeCode=false
     username: iqsbz
     password: '!Sqisoft00'
     maximum-pool-size: 3
