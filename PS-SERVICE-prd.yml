@@ -1,0 +1,31 @@
+spring:
+  profiles: dev
+  message: Hello Spring PS - SERVICE dev Server!!
+  jpa:
+    database: mysql
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+
+ps-service:
+  datasource:
+      jdbc-url: jdbc:mysql://iqsbz-operation.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/ps_service?serverTimezone=UTC
+      username: iqsbz
+      password: '!SqiSoft00'
+      maximum-pool-size: 3
+      connection-test-query: SELECT 1
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+iqsbz3:
+  datasource:
+    jdbc-url: jdbc:mysql://iqsbz-operation.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/iqsbz3?serverTimezone=UTC
+    username: iqsbz
+    password: '!SqiSoft00'
+    maximum-pool-size: 3
+    connection-test-query: SELECT 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    idle-timeout: 100000
+    validation-timeout: 3000
+    max-lifetime: 180000
+
