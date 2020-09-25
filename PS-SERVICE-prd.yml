@@ -1,5 +1,5 @@
 spring:
-  profiles: dev
+  profiles: op
   message: Hello Spring PS - SERVICE dev Server!!
   jpa:
     database: mysql
