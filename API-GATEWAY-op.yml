@@ -4,12 +4,12 @@ server:
 spring:
   application:
     name: API-GATEWAY
-  profiles: prd
+  profiles: op
 
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_URL:http://iqsbz-new-op.ap-northeast-2.elasticbeanstalk.com//eureka/}
+      defaultZone: ${EUREKA_URL:http://iqsbz-new-op.ap-northeast-2.elasticbeanstalk.com/eureka/}
 zuul:
   routes:
     okr-service:
