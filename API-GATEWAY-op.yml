@@ -9,7 +9,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_URL:http://iqsbz-new-op.ap-northeast-2.elasticbeanstalk.com/eureka/}
+      defaultZone: ${EUREKA_URL:http://iqsbz-new-op.ap-northeast-2.elasticbeanstalk.com:9020/eureka/}
 zuul:
   routes:
     okr-service:
