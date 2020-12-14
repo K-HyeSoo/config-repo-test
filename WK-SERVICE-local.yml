@@ -1,0 +1,47 @@
+spring:
+  profiles: local
+  message: Hello Spring PS - SERVICE Local Server!!
+  jpa:
+    database: mysql
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+
+ps-service:
+  datasource:
+    jdbc-url: jdbc:mysql://192.168.3.203:3306/ps_service?serverTimezone=UTC
+    username: iqsbz
+    password: '!Sqisoft00'
+    maximum-pool-size: 20
+    connection-test-query: SELECT 1
+    validation-timeout: 20000
+    idle-timeout: 100000
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    max-lifetime: 3600000
+    connectionTimeout: 5000
+
+wk-service:
+  datasource:
+    jdbc-url: jdbc:mysql://192.168.3.203:3306/wk_service?serverTimezone=UTC
+    username: iqsbz
+    password: '!Sqisoft00'
+    maximum-pool-size: 20
+    connection-test-query: SELECT 1
+    validation-timeout: 20000
+    idle-timeout: 100000
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    max-lifetime: 3600000
+    connectionTimeout: 5000
+
+iqsbz3:
+  datasource:
+    jdbc-url: jdbc:mysql://192.168.3.203:3306/iqsbz3?serverTimezone=UTC
+    username: iqsbz
+    password: '!Sqisoft00'
+    maximum-pool-size: 20
+    connection-test-query: SELECT 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    idle-timeout: 100000
+    validation-timeout: 20000
+    max-lifetime: 3600000
+    connectionTimeout: 5000
