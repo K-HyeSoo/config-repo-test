@@ -12,13 +12,9 @@ ps-service:
     jdbc-url: jdbc:mysql://iqsbz-operation.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/ps_service?serverTimezone=UTC
     username: iqsbz
     password: '!SqiSoft00'
-    maximum-pool-size: 20
+    maximum-pool-size: 3
     connection-test-query: SELECT 1
-    validation-timeout: 20000
-    idle-timeout: 100000
     driver-class-name: com.mysql.cj.jdbc.Driver
-    max-lifetime: 3600000
-    connectionTimeout: 5000
 
 
 wk-service:
@@ -26,24 +22,19 @@ wk-service:
     jdbc-url: jdbc:mysql://iqsbz-operation.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/wk_service?serverTimezone=UTC
     username: iqsbz
     password: '!SqiSoft00'
-    maximum-pool-size: 20
+    maximum-pool-size: 3
     connection-test-query: SELECT 1
-    validation-timeout: 20000
-    idle-timeout: 100000
     driver-class-name: com.mysql.cj.jdbc.Driver
-    max-lifetime: 3600000
-    connectionTimeout: 5000
 
 iqsbz3:
   datasource:
     jdbc-url: jdbc:mysql://iqsbz-operation.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/iqsbz3?serverTimezone=UTC
     username: iqsbz
     password: '!SqiSoft00'
-    maximum-pool-size: 20
+    maximum-pool-size: 3
     connection-test-query: SELECT 1
     driver-class-name: com.mysql.cj.jdbc.Driver
     idle-timeout: 100000
-    validation-timeout: 20000
-    max-lifetime: 3600000
-    connectionTimeout: 5000
+    validation-timeout: 3000
+    max-lifetime: 180000
 
