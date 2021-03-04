@@ -9,7 +9,7 @@ spring:
 
 fi-service:
   datasource:
-    jdbc-url: jdbc:mysql://192.168.3.203:3306/fi_service?serverTimezone=UTC
+    jdbc-url: jdbc:mysql://192.168.3.203:3306/fi_service?serverTimezone=UTC&allowMultiQueries=true
     username: iqsbz
     password: '!Sqisoft00'
     maximum-pool-size: 20

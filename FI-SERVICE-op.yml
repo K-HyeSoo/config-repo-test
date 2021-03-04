@@ -9,7 +9,7 @@ spring:
 
 fi-service:
   datasource:
-    jdbc-url: jdbc:mysql://iqsbz-operation.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/fi_service?serverTimezone=UTC
+    jdbc-url: jdbc:mysql://iqsbz-operation.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/fi_service?serverTimezone=UTC&allowMultiQueries=true
     username: iqsbz
     password: '!SqiSoft00'
     maximum-pool-size: 3
