@@ -36,3 +36,12 @@ do-service:
     maximum-pool-size: 3
     connection-test-query: SELECT 1
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+redmine:
+  datasource:
+    jdbc-url: jdbc:mariadb://192.168.0.225:3306/redmine
+    username: root
+    password: 'redmine'
+    maximun-pool-size: 3
+    connection-test-query: SELECT 1
+    driver-class-name: org.mariadb.jdbc.Driver
