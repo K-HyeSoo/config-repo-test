@@ -39,10 +39,18 @@ do-service:
 
 redmine:
   datasource:
-    jdbc-url: jdbc:mariadb://192.168.0.225:3306/redmine
+    jdbc-url: jdbc:mariadb://192.168.0.225:3306/redmine?characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: 'redmine'
     maximun-pool-size: 3
     connection-test-query: SELECT 1
     driver-class-name: org.mariadb.jdbc.Driver
 
+redmineAWS:
+  datasource:
+    jdbc-url: jdbc:mariadb://13.125.46.12:3306/redmine?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 'redmine'
+    maximun-pool-size: 3
+    connection-test-query: SELECT 1
+    driver-class-name: org.mariadb.jdbc.Driver
