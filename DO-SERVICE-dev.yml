@@ -46,7 +46,7 @@ redmine:
     connection-test-query: SELECT 1
     driver-class-name: org.mariadb.jdbc.Driver
 
-redmineAWS:
+redmine-aws:
   datasource:
     jdbc-url: jdbc:mariadb://13.125.46.12:3306/redmine?characterEncoding=UTF-8&serverTimezone=UTC
     username: root
