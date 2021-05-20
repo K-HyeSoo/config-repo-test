@@ -32,3 +32,16 @@ iqsbz3:
     validation-timeout: 20000
     max-lifetime: 3600000
     connectionTimeout: 5000
+
+do-service:
+  datasource:
+    jdbc-url: jdbc:mysql://192.168.3.203:3306/do_service?serverTimezone=UTC
+    username: iqsbz
+    password: '!Sqisoft00'
+    maximum-pool-size: 20
+    connection-test-query: SELECT 1
+    validation-timeout: 20000
+    idle-timeout: 100000
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    max-lifetime: 3600000
+    connectionTimeout: 5000
