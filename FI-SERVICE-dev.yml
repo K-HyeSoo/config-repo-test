@@ -12,7 +12,7 @@ fi-service:
     jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/fi_service?serverTimezone=UTC&allowMultiQueries=true
     username: iqsbz
     password: '!SqiSoft00'
-    maximum-pool-size: 3
+    maximum-pool-size: 1
     connection-test-query: SELECT 1
     driver-class-name: com.mysql.cj.jdbc.Driver
 
@@ -22,7 +22,7 @@ iqsbz3:
     jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/iqsbz3?serverTimezone=UTC
     username: iqsbz
     password: '!SqiSoft00'
-    maximum-pool-size: 3
+    maximum-pool-size: 1
     connection-test-query: SELECT 1
     driver-class-name: com.mysql.cj.jdbc.Driver
     idle-timeout: 100000
