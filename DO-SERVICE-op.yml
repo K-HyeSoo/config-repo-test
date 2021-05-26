@@ -28,3 +28,11 @@ iqsbz3:
     validation-timeout: 3000
     max-lifetime: 180000
 
+pm-service:
+  datasource:
+    jdbc-url: jdbc:mysql://iqsbz-operation.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/pm_service?serverTimezone=UTC&allowMultiQueries=true
+    username: iqsbz
+    password: '!SqiSoft00'
+    maximum-pool-size: 3
+    connection-test-query: SELECT 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
