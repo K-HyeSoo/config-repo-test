@@ -12,7 +12,7 @@ ps-service:
     jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/ps_service?serverTimezone=UTC
     username: iqsbz
     password: '!SqiSoft00'
-    maximum-pool-size: 3
+    maximum-pool-size: 1
     connection-test-query: SELECT 1
     driver-class-name: com.mysql.cj.jdbc.Driver
 
@@ -21,7 +21,7 @@ iqsbz3:
     jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/iqsbz3?serverTimezone=UTC
     username: iqsbz
     password: '!SqiSoft00'
-    maximum-pool-size: 3
+    maximum-pool-size: 1
     connection-test-query: SELECT 1
     driver-class-name: com.mysql.cj.jdbc.Driver
     idle-timeout: 100000
@@ -33,7 +33,7 @@ do-service:
     jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/do_service?serverTimezone=UTC
     username: iqsbz
     password: '!SqiSoft00'
-    maximum-pool-size: 3
+    maximum-pool-size: 1
     connection-test-query: SELECT 1
     driver-class-name: com.mysql.cj.jdbc.Driver
 
@@ -42,7 +42,7 @@ redmine:
     jdbc-url: jdbc:mariadb://192.168.0.225:3306/redmine?characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: 'redmine'
-    maximun-pool-size: 3
+    maximun-pool-size: 1
     connection-test-query: SELECT 1
     driver-class-name: org.mariadb.jdbc.Driver
 
@@ -51,6 +51,15 @@ redmine-aws:
     jdbc-url: jdbc:mariadb://13.125.46.12:3306/redmine?characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: 'redmine'
-    maximun-pool-size: 3
+    maximun-pool-size: 1
     connection-test-query: SELECT 1
     driver-class-name: org.mariadb.jdbc.Driver
+
+pm-service:
+  datasource:
+    jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/pm_service?serverTimezone=UTC&allowMultiQueries=true
+    username: iqsbz
+    password: '!SqiSoft00'
+    maximum-pool-size: 1
+    connection-test-query: SELECT 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
