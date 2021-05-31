@@ -58,3 +58,12 @@ pm-service:
     validation-timeout: 20000
     max-lifetime: 3600000
     connectionTimeout: 5000
+
+redmine:
+  datasource:
+    jdbc-url: jdbc:mariadb://192.168.0.225:3306/redmine?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 'redmine'
+    maximun-pool-size: 1
+    connection-test-query: SELECT 1
+    driver-class-name: org.mariadb.jdbc.Driver
