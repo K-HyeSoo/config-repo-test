@@ -35,7 +35,7 @@ iqsbz3:
 
 do-service:
   datasource:
-    jdbc-url: jdbc:mysql://192.168.3.203:3306/do_service?serverTimezone=UTC
+    jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/do_service?serverTimezone=UTC
     username: iqsbz
     password: '!Sqisoft00'
     maximum-pool-size: 20
@@ -48,7 +48,7 @@ do-service:
 
 pm-service:
   datasource:
-    jdbc-url: jdbc:mysql://192.168.3.203:3306/pm_service?serverTimezone=UTC&allowMultiQueries=true
+    jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/pm_service?serverTimezone=UTC&allowMultiQueries=true
     username: iqsbz
     password: '!Sqisoft00'
     maximum-pool-size: 20
