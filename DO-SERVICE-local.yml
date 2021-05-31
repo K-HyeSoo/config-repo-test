@@ -37,27 +37,19 @@ do-service:
   datasource:
     jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/do_service?serverTimezone=UTC
     username: iqsbz
-    password: '!Sqisoft00'
-    maximum-pool-size: 20
+    password: '!SqiSoft00'
+    maximum-pool-size: 2
     connection-test-query: SELECT 1
-    validation-timeout: 20000
-    idle-timeout: 100000
     driver-class-name: com.mysql.cj.jdbc.Driver
-    max-lifetime: 3600000
-    connectionTimeout: 5000
 
 pm-service:
   datasource:
     jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/pm_service?serverTimezone=UTC&allowMultiQueries=true
     username: iqsbz
-    password: '!Sqisoft00'
-    maximum-pool-size: 20
+    password: '!SqiSoft00'
+    maximum-pool-size: 2
     connection-test-query: SELECT 1
     driver-class-name: com.mysql.cj.jdbc.Driver
-    idle-timeout: 100000
-    validation-timeout: 20000
-    max-lifetime: 3600000
-    connectionTimeout: 5000
 
 redmine:
   datasource:
