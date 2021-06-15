@@ -37,6 +37,15 @@ do-service:
     connection-test-query: SELECT 1
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+redmine-aws:
+  datasource:
+    jdbc-url: jdbc:mariadb://13.125.46.12:3306/redmine?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 'redmine'
+    maximun-pool-size: 2
+    connection-test-query: SELECT 1
+    driver-class-name: org.mariadb.jdbc.Driver
+
 pm-service:
   datasource:
     jdbc-url: jdbc:mysql://iqsbz-operation.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/pm_service?serverTimezone=UTC&allowMultiQueries=true
