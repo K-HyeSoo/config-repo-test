@@ -44,7 +44,7 @@ do-service:
 
 pm-service:
   datasource:
-    jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/pm_service?serverTimezone=UTC&allowMultiQueries=true
+    jdbc-url: jdbc:mysql://192.168.3.203:3306/pm_service?serverTimezone=UTC&allowMultiQueries=true
     username: iqsbz
     password: '!SqiSoft00'
     maximum-pool-size: 2
@@ -71,7 +71,7 @@ redmine-aws:
 
 fi-service:
   datasource:
-    jdbc-url: jdbc:mysql://iqsbz-test.cmzny3nijw9z.ap-northeast-2.rds.amazonaws.com:3306/fi_service?serverTimezone=UTC&allowMultiQueries=true
+    jdbc-url: jdbc:mysql://192.168.3.203:3306/fi_service?serverTimezone=UTC&allowMultiQueries=true
     username: iqsbz
     password: '!SqiSoft00'
     maximum-pool-size: 2
