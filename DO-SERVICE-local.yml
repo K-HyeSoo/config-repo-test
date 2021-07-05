@@ -46,7 +46,7 @@ pm-service:
   datasource:
     jdbc-url: jdbc:mysql://192.168.3.203:3306/pm_service?serverTimezone=UTC&allowMultiQueries=true
     username: iqsbz
-    password: '!SqiSoft00'
+    password: '!Sqisoft00'
     maximum-pool-size: 2
     connection-test-query: SELECT 1
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -73,7 +73,7 @@ fi-service:
   datasource:
     jdbc-url: jdbc:mysql://192.168.3.203:3306/fi_service?serverTimezone=UTC&allowMultiQueries=true
     username: iqsbz
-    password: '!SqiSoft00'
+    password: '!Sqisoft00'
     maximum-pool-size: 2
     connection-test-query: SELECT 1
     driver-class-name: com.mysql.cj.jdbc.Driver
