@@ -1,0 +1,18 @@
+spring:
+  profiles: default
+  message: Welcome To Config!!
+  jpa:
+    database: mysql
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+
+hm-service:
+  datasource:
+    jdbc-url: jdbc:mysql://192.168.0.130:3306/hm_service?serverTimezone=UTC
+    username: root
+    password: 'root'
+    maximum-pool-size: 3
+    connection-test-query: SELECT 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
